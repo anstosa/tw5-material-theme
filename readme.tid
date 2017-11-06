@@ -4,12 +4,18 @@ This theme is a material design skin for TiddlyWiki5
 
 !! Installation
 
-To add the theme to your own TiddlyWiki5, just drag the following links to the browser window:
+To add the theme to your own TiddlyWiki5:
 
-[[$:/themes/anstosa/tw5-material]]
-[[$:/plugin/anstosa/tw5-material]]
+# drag the following links to the browser window:
+#* [[$:/themes/anstosa/tw5-material]]
+#* [[$:/plugins/anstosa/tw5-material]]
+# Save and reload
+# Select the Material Design theme in [[$:/ControlPanel]] > Appearance > Theme
+# Select the Material Design Palette in [[$:/ControlPanel]] > Appearance > Palette
 
-Note that the plugin is not technically required but is highly recommended as it adds the color palette, fixes the scrolling behavior, and some other things that aren't possible in themes
+!! Bugs
+
+There are a ''lot'' of bugs at this point. Please [[report them|https://github.com/anstosa/tw5-material-theme/issues]] as you encounter them.
 
 !! Contributing
 
