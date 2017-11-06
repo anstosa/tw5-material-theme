@@ -1,0 +1,12 @@
+{
+  "name": "tw5-material-theme",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "./build.sh"
+  },
+  "dependencies": {
+    "material-design-icons": "^3.0.1",
+    "roboto-fontface": "^0.8.0"
+  }
+}

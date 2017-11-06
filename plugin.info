@@ -1,0 +1,11 @@
+{
+    "title": "$:/themes/anstosa/tw5-material",
+    "description": "Material Design theme",
+    "name": "Material",
+    "author": "anstosa",
+    "version": "1.0.0",
+    "core-version": ">=5.0.0",
+    "source": "https://github.com/anstosa/tw5-material-theme",
+    "plugin-type": "theme",
+    "dependents": ["$:/themes/tiddlywiki/vanilla"]
+}

@@ -1,0 +1,13 @@
+title: $:/core/ui/PageTemplate/sidebar
+tags: $:/tags/PageTemplate
+
+<div class="tc-sidebar-scrollable">
+    <$reveal state="$:/state/sidebar" type="match" text="yes" default="yes" retain="yes" animate="yes">
+        <div class="tc-sidebar-header">
+            <div class="tc-site-subtitle">
+                <$transclude tiddler="$:/SiteSubtitle" mode="inline"/>
+            </div>
+            <$transclude tiddler="$:/core/ui/SideBarLists" mode="inline"/>
+        </div>
+    </$reveal>
+</div>

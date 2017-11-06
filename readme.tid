@@ -1,0 +1,17 @@
+title: $:/themes/anstosa/tw5-material/readme
+
+This theme is a material design skin for TiddlyWiki5
+
+!! Installation
+
+To add the theme to your own TiddlyWiki5, just drag the following links to the browser window:
+
+[[$:/themes/anstosa/tw5-material]]
+[[$:/plugin/anstosa/tw5-material]]
+
+Note that the plugin is not technically required but is highly recommended as it adds the color palette, fixes the scrolling behavior, and some other things that aren't possible in themes
+
+!! Contributing
+
+[[github.com/anstosa/tw5-material-theme|https://github.com/anstosa/tw5-material-theme]]
+[[github.com/anstosa/tw5-material-plugin|https://github.com/anstosa/tw5-material-plugin]]

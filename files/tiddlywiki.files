@@ -1,0 +1,32 @@
+{
+    "tiddlers": [
+        {
+            "file": "Roboto-Regular.woff",
+            "fields": {
+                "type": "application/font-woff",
+                "title": "$:/theme/anstosa/tw5-material/Roboto-Regular.woff"
+            }
+        },
+        {
+            "file": "Roboto-RegularItalic.woff",
+            "fields": {
+                "type": "application/font-woff",
+                "title": "$:/theme/anstosa/tw5-material/Roboto-RegularItalic.woff"
+            }
+        },
+        {
+            "file": "Roboto-Bold.woff",
+            "fields": {
+                "type": "application/font-woff",
+                "title": "$:/theme/anstosa/tw5-material/Roboto-Bold.woff"
+            }
+        },
+        {
+            "file": "Roboto-BoldItalic.woff",
+            "fields": {
+                "type": "application/font-woff",
+                "title": "$:/theme/anstosa/tw5-material/Roboto-BoldItalic.woff"
+            }
+        }
+    ]
+}
