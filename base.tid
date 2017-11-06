@@ -292,6 +292,7 @@ button:not(.tc-btn-invisible):focus {
             line-height: {{$:/themes/anstosa/tw5-material/metrics/toolbarheight}};
         }
 
+            .tc-topbar-right .tc-site-title,
             .tc-topbar-right .tc-site-title a,
             .tc-topbar-right .tc-site-title a:hover {
                 color: white;
