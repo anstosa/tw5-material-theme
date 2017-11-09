@@ -1,31 +1,38 @@
 {
     "tiddlers": [
         {
-            "file": "Roboto-Regular.woff",
+            "file": "MaterialIcons-Regular.woff",
             "fields": {
                 "type": "application/font-woff",
-                "title": "$:/theme/anstosa/tw5-material/Roboto-Regular.woff"
+                "title": "$:/themes/anstosa/tw5-material/MaterialIcons-Regular.woff"
             }
         },
         {
-            "file": "Roboto-RegularItalic.woff",
+            "file": "Roboto-Regular.woff",
             "fields": {
                 "type": "application/font-woff",
-                "title": "$:/theme/anstosa/tw5-material/Roboto-RegularItalic.woff"
+                "title": "$:/themes/anstosa/tw5-material/Roboto-Regular.woff"
+            }
+        },
+        {
+            "file": "Roboto-Italic.woff",
+            "fields": {
+                "type": "application/font-woff",
+                "title": "$:/themes/anstosa/tw5-material/Roboto-Italic.woff"
             }
         },
         {
             "file": "Roboto-Bold.woff",
             "fields": {
                 "type": "application/font-woff",
-                "title": "$:/theme/anstosa/tw5-material/Roboto-Bold.woff"
+                "title": "$:/themes/anstosa/tw5-material/Roboto-Bold.woff"
             }
         },
         {
             "file": "Roboto-BoldItalic.woff",
             "fields": {
                 "type": "application/font-woff",
-                "title": "$:/theme/anstosa/tw5-material/Roboto-BoldItalic.woff"
+                "title": "$:/themes/anstosa/tw5-material/Roboto-BoldItalic.woff"
             }
         }
     ]
