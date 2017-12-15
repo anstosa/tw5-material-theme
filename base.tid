@@ -108,6 +108,10 @@ code {
     font-family: 'Roboto Mono', monospace;
 }
 
+.tc-error-form button {
+    color: <<colour foreground>>;
+}
+
 button.tc-tag-label,
 span.tc-tag-label {
     border-radius: {{$:/themes/anstosa/tw5-material/metrics/borderradius}};
@@ -282,6 +286,20 @@ button:not(.tc-btn-invisible):focus {
     padding-top: 0;
 }
 
+    .tc-sidebar-lists > p {
+        min-height: 56px;
+    }
+
+    .tc-sidebar-lists > p + p {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tc-sidebar-lists > p > .tc-tab-set > .tc-tab-buttons {
+        display: block;
+        margin-bottom: 0;
+    }
+
     .tc-sidebar-lists > p > .tc-tab-set > .tc-tab-buttons button,
     .tc-tab-buttons button {
         background: none;
@@ -289,6 +307,7 @@ button:not(.tc-btn-invisible):focus {
         box-shadow: initial;
         border: none;
         border-bottom: 2px solid transparent;
+        height: 40px;
         margin: 0;
         outline: 0;
         opacity: 0.65;
@@ -355,11 +374,20 @@ button:not(.tc-btn-invisible):focus {
         display: flex;
         height: {{$:/themes/anstosa/tw5-material/metrics/toolbarheight}};
         left: 0;
+        overflow: hidden;
         position: fixed;
         right: initial;
         top: 0;
         transition: background ease-out 0.15s;
         width: 100%;
+    }
+
+    @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+        .tc-topbar-right + p {
+            height: calc(100% - {{$:/themes/anstosa/tw5-material/metrics/toolbarheight}});
+            position: relative;
+            z-index: 1;
+        }
     }
 
     .tc-dirty .tc-topbar-right {
@@ -399,13 +427,32 @@ button:not(.tc-btn-invisible):focus {
 .tc-sidebar-scrollable {
     background: <<colour background>>;
     box-shadow: 2px 0 5px rgba(0,0,0,.26);
+    height: calc(100vh - {{$:/themes/anstosa/tw5-material/metrics/toolbarheight}});
     left: 0;
     margin: 0;
     overflow-y: hidden;
     padding: 0;
+    position: absolute;
     right: auto;
     top: {{$:/themes/anstosa/tw5-material/metrics/toolbarheight}};
     transition: left ease-out 0.15s;
+}
+
+    @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+        .tc-sidebar-scrollable {
+            width: 80%;
+        }
+    }
+
+.tc-plugin-reload-warning {
+    height: {{$:/themes/anstosa/tw5-material/metrics/toolbarheight}};
+    z-index: 9999
+}
+
+.tc-plugin-reload-warning p {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 <<if-no-sidebar "
@@ -420,6 +467,12 @@ button:not(.tc-btn-invisible):focus {
         flex-direction: column;
     }
 
+    @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+        .tc-sidebar-header {
+            padding: 0;
+        }
+    }
+
         .tc-site-subtitle {
             background: <<colour primary>>;
             color: white;
@@ -431,7 +484,6 @@ button:not(.tc-btn-invisible):focus {
             display: flex;
             flex: 1;
             flex-direction: column;
-            overflow: hidden;
             position: relative;
         }
 
@@ -446,12 +498,20 @@ button:not(.tc-btn-invisible):focus {
                 padding: 10px 20px;
             }
 
+                .tc-sidebar-lists .tc-search > input + span {
+                    display: flex;
+                }
+
                 .tc-block-dropdown.tc-search-drop-down {
+                    border-radius: 2px;
                     border: none;
-                    bottom: 0;
-                    margin-left: 0;
-                    top: calc({{$:/themes/anstosa/tw5-material/metrics/buttonheight}} + 5px);
-                    width: 100%;
+                    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+                    min-height: 10vh;
+                    max-height: 80vh;
+                    margin-left: 20px;
+                    overflow: hidden;
+                    top: 41px;
+                    width: calc(100% - 40px);
                 }
                     .tc-block-dropdown.tc-search-drop-down a {
                         text-overflow: ellipsis;
@@ -501,6 +561,13 @@ button:not(.tc-btn-invisible):focus {
     top: {{$:/themes/anstosa/tw5-material/metrics/toolbarheight}};
     transition: all ease-out 0.15s;
     width: calc(100% - {{$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth}});
+}
+
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+    .tc-story-river {
+        left: 0;
+        width: 100%
+    }
 }
 
 <<if-no-sidebar "
